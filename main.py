@@ -60,6 +60,7 @@ def cls():
     
 if __name__ == "__main__":
     prix_precedent = scraping().get_price("https://www.boulanger.com/ref/8008595")
+    print(f"Le prix du produit est actuellement de : {prix_precedent} €")
     while(True):
         if datetime.datetime.now().minute == 0:
             cls()
