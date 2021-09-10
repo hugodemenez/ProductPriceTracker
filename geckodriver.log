@@ -1,0 +1,135 @@
+1631265658764	geckodriver	INFO	Listening on 127.0.0.1:52486
+1631265740035	geckodriver	INFO	Listening on 127.0.0.1:62993
+1631265743060	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofilexSNUpd"
+*** You are running in headless mode.
+1631265743356	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofilexSNUpd\\search.json.mozlz4", (void 0)))
+1631265744323	Marionette	INFO	Listening on port 50850
+1631265744603	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631265744605	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:62992","sslProxy":"127.0.0.1:62992"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileOxwuEo"
+*** You are running in headless mode.
+1631265880631	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileOxwuEo\\search.json.mozlz4", (void 0)))
+1631265881568	Marionette	INFO	Listening on port 50601
+1631265881891	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631265881893	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:61716","sslProxy":"127.0.0.1:61716"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1631265894106	Marionette	INFO	Stopped listening on port 50601
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631265911443	geckodriver	INFO	Listening on 127.0.0.1:54268
+1631265914503	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileO5dMJi"
+*** You are running in headless mode.
+1631265914798	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileO5dMJi\\search.json.mozlz4", (void 0)))
+1631265915724	Marionette	INFO	Listening on port 63504
+1631265916063	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631265916065	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:54267","sslProxy":"127.0.0.1:54267"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1631265928442	Marionette	INFO	Stopped listening on port 63504
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x390077,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631265968379	geckodriver	INFO	Listening on 127.0.0.1:65396
+1631265971428	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofilenxauqi"
+*** You are running in headless mode.
+1631265971712	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofilenxauqi\\search.json.mozlz4", (void 0)))
+1631265972647	Marionette	INFO	Listening on port 62117
+1631265972967	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631265972970	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:65395","sslProxy":"127.0.0.1:65395"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileSeh8x3"
+*** You are running in headless mode.
+1631266032086	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileSeh8x3\\search.json.mozlz4", (void 0)))
+1631266033027	Marionette	INFO	Listening on port 61923
+1631266033356	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631266033358	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:61560","sslProxy":"127.0.0.1:61560"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileQtilGw"
+*** You are running in headless mode.
+1631266136095	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileQtilGw\\search.json.mozlz4", (void 0)))
+1631266137026	Marionette	INFO	Listening on port 64726
+1631266137347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631266137350	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:59084","sslProxy":"127.0.0.1:59084"}
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofile6lYnpE"
+*** You are running in headless mode.
+1631266148417	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofile6lYnpE\\search.json.mozlz4", (void 0)))
+1631266149350	Marionette	INFO	Listening on port 60685
+1631266149675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631266149677	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:53652","sslProxy":"127.0.0.1:53652"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1631266161390	Marionette	INFO	Stopped listening on port 60685
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631266166147	geckodriver	INFO	Listening on 127.0.0.1:60258
+1631266169199	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofile8ml3FY"
+*** You are running in headless mode.
+1631266169504	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofile8ml3FY\\search.json.mozlz4", (void 0)))
+1631266170428	Marionette	INFO	Listening on port 53329
+1631266170759	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631266170761	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:60257","sslProxy":"127.0.0.1:60257"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1631266186392	Marionette	INFO	Stopped listening on port 53329
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1631266213100	geckodriver	INFO	Listening on 127.0.0.1:53245
+1631266216138	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileVIp5Kd"
+*** You are running in headless mode.
+1631266216435	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Hugo\\AppData\\Local\\Temp\\rust_mozprofileVIp5Kd\\search.json.mozlz4", (void 0)))
+1631266217395	Marionette	INFO	Listening on port 52049
+1631266217685	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1631266217688	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"127.0.0.1:53244","sslProxy":"127.0.0.1:53244"}
+JavaScript error: https://assets.reach5.co/hassets/sdk/identity.core.fb6eb253322d12ad1dcc.js, line 1: Error: Global variable "reach5" not found. Check that your loader is set correctly.
+JavaScript warning: https://www.boulanger.com/ga-gPO/1v-Rh/CCdiL/jKHj/OSw9pJcN/VTAgAUEB/TT9r/YGFXYEI, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://www.boulanger.com/wcsstore/assets/dist/js/desktop/04_page/catalog/productPage.70fabbdee8.js line 1 > srcScript, line 1: TypeError: MutationObserver.observe: Argument 1 is not an object.
+1631266224484	Marionette	INFO	Stopped listening on port 52049
+JavaScript error: resource:///modules/Interactions.jsm, line 230: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
