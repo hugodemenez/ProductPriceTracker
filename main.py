@@ -32,13 +32,15 @@ class scraping():
             except Exception as error:
                 print(f"Il y a une erreur : {error}")
             
-            self.driver.close()
-            
             try:
+                unit_price
+                self.driver.close()
                 return unit_price
             except:
                 print("Impossible de recupérer le prix, nouvel essai dans 5 minutes")
                 sleep(300)
+                
+        
 
         
         
