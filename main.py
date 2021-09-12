@@ -36,9 +36,10 @@ class scraping():
                 unit_price
                 self.driver.close()
                 return unit_price
-            except:
-                print("Impossible de recupérer le prix, nouvel essai dans 5 minutes")
-                sleep(300)
+            except Exception as error:
+                print("Impossible de recupérer le prix, nouvel essai dans 30 secondes")
+                print(f"L'erreur est : {error}")
+                sleep(30)
                 
         
 
