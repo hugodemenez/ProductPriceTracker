@@ -55,8 +55,8 @@ if __name__ == "__main__":
         try:
             prix_precedent = float(scraping().get_price("https://www.boulanger.com/ref/8008595"))
             break
-        except:
-            pass
+        except Exception as error:
+            print(error)
     print(f"Le prix du produit est actuellement de : {prix_precedent} €")
     while(True):
         if datetime.datetime.now().minute == 0:
@@ -65,8 +65,8 @@ if __name__ == "__main__":
                 try:
                     prix_actuel = float(scraping().get_price("https://www.boulanger.com/ref/8008595"))
                     break
-                except:
-                    pass
+                except Exception as error:
+                    print(error)
             if prix_precedent != prix_actuel:
                 envoie_notification(prix_precedent,prix_actuel)
                 prix_precedent=prix_actuel
