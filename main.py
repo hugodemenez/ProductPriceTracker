@@ -24,13 +24,10 @@ class scraping():
         for elem in self.driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
             try:
                 if float(elem.text):
-                    self.driver.close()
                     return float(elem.text)
             except:
                 pass
-        
-        self.driver.close()
-        return
+
             
             
 
