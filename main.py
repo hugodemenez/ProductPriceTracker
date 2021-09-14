@@ -10,26 +10,26 @@ class scraping():
     Cette classe regroupe les differentes fonctions de scraping utilisées pour récuperer les données
     """
     def __init__(self):
-        pass
-        
-    def get_price(self,url):
         #On initialise le headless webbrowser
         options = Options()
         options.headless = True
         profile = webdriver.FirefoxProfile()
         #On met la langue en français pour pouvoir reconnaitre les élements
         profile.set_preference('intl.accept_languages', 'fr-FR, fr')
-        driver = webdriver.Firefox(options=options,firefox_profile=profile)
-        driver.get(url)
-        for elem in driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
+        self.driver = webdriver.Firefox(options=options,firefox_profile=profile)
+        
+
+    def get_price(self,url):
+        self.driver.get(url)
+        for elem in self.driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
             try:
                 if float(elem.text):
-                    driver.quit()
                     return float(elem.text)
             except:
                 pass
             
-        driver.quit()    
+    def close_connection(self):
+        self.driver.close()
         
 
             
@@ -51,22 +51,25 @@ def cls():
     os.system('cls' if os.name=='nt' else 'clear')
     
 if __name__ == "__main__":
+    scraping = scraping()
     while(True):
         try:
-            prix_precedent = float(scraping().get_price("https://www.boulanger.com/ref/8008595"))
+            prix_precedent = float(scraping.get_price("https://www.boulanger.com/ref/8008595"))
             break
         except Exception as error:
             print(error)
+    scraping.close_connection()
     print(f"Le prix du produit est actuellement de : {prix_precedent} €")
     while(True):
         if datetime.datetime.now().minute == 0:
             cls()
             while(True):
                 try:
-                    prix_actuel = float(scraping().get_price("https://www.boulanger.com/ref/8008595"))
+                    prix_actuel = float(scraping.get_price("https://www.boulanger.com/ref/8008595"))
                     break
                 except Exception as error:
                     print(error)
+                scraping.close_connection()
             if prix_precedent != prix_actuel:
                 envoie_notification(prix_precedent,prix_actuel)
                 prix_precedent=prix_actuel
