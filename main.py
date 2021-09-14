@@ -10,26 +10,27 @@ class scraping():
     Cette classe regroupe les differentes fonctions de scraping utilisées pour récuperer les données
     """
     def __init__(self):
+        pass
+        
+    def get_price(self,url):
         #On initialise le headless webbrowser
         options = Options()
         options.headless = True
         profile = webdriver.FirefoxProfile()
         #On met la langue en français pour pouvoir reconnaitre les élements
         profile.set_preference('intl.accept_languages', 'fr-FR, fr')
-        self.driver = webdriver.Firefox(options=options,firefox_profile=profile)
-        
-
-    def get_price(self,url):
-        self.driver.get(url)
-        for elem in self.driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
+        driver = webdriver.Firefox(options=options,firefox_profile=profile)
+        driver.get(url)
+        for elem in driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
             try:
                 if float(elem.text):
-                    self.driver.quit()
+                    driver.quit()
                     return float(elem.text)
             except:
                 pass
             
-        self.driver.quit()
+        driver.quit()    
+        
 
             
 
