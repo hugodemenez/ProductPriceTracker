@@ -16,64 +16,40 @@ class scraping():
         profile = webdriver.FirefoxProfile()
         #On met la langue en français pour pouvoir reconnaitre les élements
         profile.set_preference('intl.accept_languages', 'fr-FR, fr')
+        
         self.driver = webdriver.Firefox(options=options,firefox_profile=profile)
         
-
-    def get_price(self,url):
+    def track_price(self,url):
         self.driver.get(url)
-        for elem in self.driver.find_elements_by_xpath('.//span[@class = "exponent"]'):
+        init_value = 0
+        while(True):
             try:
-                if float(elem.text):
-                    return float(elem.text)
-            except:
-                pass
+                selector = self.driver.find_elements_by_xpath('.//p[@class = "fix-price"]')
+                for elem in selector:
+                    value = elem.text
+                    
+                if value !=init_value:
+                    self.envoie_notification(init_value,value)
+                    init_value=value
+                    print(f"le nouveau prix est de {init_value}")
+                    
+                self.driver.refresh()
+            except KeyboardInterrupt or Exception:
+                self.driver.quit()
             
-    def close_connection(self):
-        self.driver.close()
-        
-
             
-
-def envoie_notification(prix_precedent,prix_actuel):
-    try:
-        token = "1813447727:AAHDPI54DetjXDDNFCMqtN-7phGvwNy9rqY"
-        chat_id = "-431364858"
-        message = f"Le prix vient de passer de {prix_precedent}€ à {prix_actuel}€ soit une difference de {round((prix_actuel/prix_precedent-1)*100,2)}%"
-        url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
-        requests.post(url)
-    except Exception as error:
-        print(error)
-    
-def cls():
-    """
-    This function clear the terminal in order to get the clear view of the prints.c
-    """
-    os.system('cls' if os.name=='nt' else 'clear')
-    
-if __name__ == "__main__":
-    scraping = scraping()
-    while(True):
+    def envoie_notification(self,prix_precedent,prix_actuel):
         try:
-            prix_precedent = float(scraping.get_price("https://www.boulanger.com/ref/8008595"))
-            break
+            token = "1813447727:AAHDPI54DetjXDDNFCMqtN-7phGvwNy9rqY"
+            chat_id = "-431364858"
+            message = f"Le prix vient de passer de {prix_precedent}€ à {prix_actuel}€ "
+            url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}"
+            requests.post(url)
         except Exception as error:
             print(error)
-    scraping.close_connection()
-    print(f"Le prix du produit est actuellement de : {prix_precedent} €")
-    while(True):
-        if datetime.datetime.now().minute == 0:
-            cls()
-            while(True):
-                try:
-                    prix_actuel = float(scraping.get_price("https://www.boulanger.com/ref/8008595"))
-                    break
-                except Exception as error:
-                    print(error)
-                scraping.close_connection()
-            if prix_precedent != prix_actuel:
-                envoie_notification(prix_precedent,prix_actuel)
-                prix_precedent=prix_actuel
-            print(f"Le prix du produit est actuellement de : {prix_actuel} €")
-            sleep(60)
-        
+
+
+if __name__ == "__main__": 
+    scraping().track_price("https://www.boulanger.com/ref/8008595")
+    
         
