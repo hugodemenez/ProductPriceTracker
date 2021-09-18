@@ -32,7 +32,8 @@ class scraping():
                     self.envoie_notification(init_value,value)
                     init_value=value
                     print(f"le nouveau prix est de {init_value}")
-                    
+                
+                sleep(600)
                 self.driver.refresh()
             except KeyboardInterrupt or Exception:
                 self.driver.quit()
