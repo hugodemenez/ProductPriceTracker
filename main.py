@@ -23,20 +23,21 @@ class scraping():
         self.driver.get(url)
         init_value = 0
         while(True):
-            try:
-                selector = self.driver.find_elements_by_xpath('.//p[@class = "fix-price"]')
-                for elem in selector:
-                    value = elem.text
+            if datetime.datetime().now().hour == 10:
+                try:
+                    selector = self.driver.find_elements_by_xpath('.//p[@class = "fix-price"]')
+                    for elem in selector:
+                        value = elem.text
+                        
+                    if value !=init_value:
+                        self.envoie_notification(init_value,value)
+                        init_value=value
+                        print(f"le nouveau prix est de {init_value}")
                     
-                if value !=init_value:
-                    self.envoie_notification(init_value,value)
-                    init_value=value
-                    print(f"le nouveau prix est de {init_value}")
-                
-                sleep(600)
-                self.driver.refresh()
-            except KeyboardInterrupt or Exception:
-                self.driver.quit()
+                    
+                    self.driver.refresh()
+                except KeyboardInterrupt or Exception:
+                    self.driver.quit()
             
             
     def envoie_notification(self,prix_precedent,prix_actuel):
