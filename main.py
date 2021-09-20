@@ -21,7 +21,8 @@ class scraping():
         self.driver.get(url)
         init_value = 0
         while(True):
-            if datetime.datetime().now().hour == 10:
+            
+            if datetime.datetime.now().hour == 10:
                 try:
                     selector = self.driver.find_elements_by_xpath('.//p[@class = "fix-price"]')
                     for elem in selector:
