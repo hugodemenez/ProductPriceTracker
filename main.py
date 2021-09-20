@@ -1,9 +1,7 @@
-
 from seleniumwire import webdriver
 from time import sleep
 from selenium.webdriver.firefox.options import Options
 import os,requests,datetime
-
 
 class scraping():
     """
