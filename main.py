@@ -32,6 +32,7 @@ class scraping():
                         init_value=value
                         print(f"le nouveau prix est de {init_value}")
                     
+                    sleep(600)
                     
                     self.driver.refresh()
                 except KeyboardInterrupt or Exception:
